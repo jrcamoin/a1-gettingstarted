@@ -1,0 +1,34 @@
+body{
+    background-color: #e9eaed;
+    color: #91D6B0;
+    font-family: "Roboto";
+    max-width: 800px;
+    margin: 40px auto;
+
+}
+
+h1{
+    color: #d88715;
+    padding-bottom: 10px;
+
+}
+
+h2{
+    color: #902543;
+
+}
+
+p{
+    color: #5e8282;
+    
+}
+
+ul{
+    background-color: #4f5b36;
+    border-radius: 4px;
+}
+
+li{
+    background-color: #38154b;
+    margin-bottom: 6px;
+}
