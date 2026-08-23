@@ -22,6 +22,14 @@ server.listen( process.env.PORT || port )
 
 const sendFile = function( response, filename ) {
    fs.readFile( filename, function( err, content ) {
-     response.end( content, 'utf-8' )
-   })
+    if(err){
+     response.writeHead(404, {'Content-Type': 'text/plain'})
+     response.end('404 Error:: File Not Found')
+     return
+    }
+    const contentType = filename.endsWith('.css') ? 'text/css' : 'text/html'
+    response.writeHead(200, {'Content-Type': contentType})
+    response.end(content)
+    
+  })
 }
