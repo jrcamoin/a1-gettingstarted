@@ -1,8 +1,8 @@
 {
-  "name": "a1-gettingstarted",
+  "name": "a1-JacobCamoin",
   "version": "0.1.0",
   "description": "WPI CS 4241 first assignment",
-  "author": "Charlie Roberts",
+  "author": "Jacob Camoin",
   "scripts": {
     "start": "node server.js"
   }
